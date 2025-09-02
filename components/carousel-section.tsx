@@ -17,8 +17,6 @@ type ServicioKey =
   | "descripcion1"
   | "titulo2"
   | "descripcion2"
-  | "titulo3"
-  | "descripcion3";
 
 const servicios: { titulo: ServicioKey; descripcion: ServicioKey }[] = [
   {
@@ -32,11 +30,7 @@ const servicios: { titulo: ServicioKey; descripcion: ServicioKey }[] = [
   {
     titulo: "titulo2",
     descripcion: "descripcion2",
-  },
-  {
-    titulo: "titulo3",
-    descripcion: "descripcion3",
-  },
+  }
 ];
 
 const CarouselSection = () => {

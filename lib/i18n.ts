@@ -16,12 +16,10 @@ export const translations = {
     //carrusel section
     titulo0: 'Reclutamiento y selección',
     descripcion0: 'Realizamos todo el proceso de búsqueda y selección de talentos. Esto incluye la identificación de los perfiles más adecuados para cada puesto, la evaluación de sus habilidades y competencias hasta la presentación del perfil adecuado a la empresa.',
-    titulo1: 'Consultoria de Recursos Humanos',
+    titulo1: 'Coaching Organizacional',
     descripcion1: 'Ofrecemos sesiones de coaching personalizado tanto para candidatos de manera individual como para equipos de trabajo. El objetivo? Potenciar el desarrollo, el rendimiento y la productividad para lograr el éxito organizacional.',
     titulo2: 'Consultoría de IT',
     descripcion2: 'Diseñamos soluciones a medidas para distintos sectores industriales.',
-    titulo3: 'Acesoria para diseño y armado de Curriculums y LinkedIn',
-    descripcion3: 'El armado de CV es una tarea crucial tanto para el candidato como para el reclutador. Un CV bien estructurado y relevante puede marcar la diferencia entre conseguir una entrevista o ser rechazado.',
     btnCarrusel: 'Quiero saber más',
 
     // Services Section
@@ -46,7 +44,7 @@ export const translations = {
     // Team Section
     teamTitle: "Nuestro",
     teamHighlight: "Equipo",
-    nadia: "Fundadora",
+    nadia: "CO Fundadora",
     nadiaDescripcion: "Con una sólida trayectoria en el mercado español, conecta el talento con las oportunidades que transforman empresas. Experta en identificación y captación de líderes para posiciones de mandos medios y perfiles jerárquicos en el mercado español. Con un profundo conocimiento del ecosistema empresarial, domina las claves del liderazgo ejecutivo y la gestión estratégica específicas del entorno cultural y profesional. Combina visión estratégica con ejecución práctica para garantizar que cada proceso de selección no solo cubra una posición, sino que potencie el crecimiento y la competitividad de su organización.",
     belen: "CO Fundadora",
     belenDescripcion: "Con un enfoque en la comunicación efectiva y las estrategias de selección innovadoras, Belén logra optimizar el proceso de atracción de talento desde la conceptualización hasta la incorporación. Su experiencia en el diseño de mensajes claros y atractivos, la gestión de la marca empleadora y la implementación de metodologías de selección avanzadas, asegura una experiencia positiva tanto para el cliente como para el candidato.",
@@ -86,12 +84,10 @@ export const translations = {
     //carrusel section
     titulo0: 'Recruitment and selection',
     descripcion0: 'We carry out the entire talent search and selection process. This includes identifying the most suitable profiles for each position, evaluating their skills and competencies up to presenting the right profile to your company.',
-    titulo1: 'Human Resources Consulting',
+    titulo1: 'Organizational Coaching',
     descripcion1: 'We offer personalized coaching sessions for candidates individually and for work teams. The goal? Enhance development, performance, and productivity to achieve organizational success.',
     titulo2: 'IT Consulting',
     descripcion2: 'We design tailor-made solutions for different industrial sectors.',
-    titulo3: 'Advice for designing and assembling CVs and LinkedIn profiles',
-    descripcion3: 'The assembly of CVs is a crucial task for both the candidate and the recruiter. A well-structured and relevant CV can make the difference between getting an interview or being rejected.',
     btnCarrusel: 'I want to know more',
 
     // Services Section
@@ -116,7 +112,7 @@ export const translations = {
     // Team Section
     teamTitle: "Our",
     teamHighlight: "Team",
-    nadia: "Founder",
+    nadia: "Co-Founder",
     nadiaDescripcion: "With a solid track record in the Spanish market, Nadia connects talent with opportunities that transform companies. An expert in identifying and attracting leaders for middle management and hierarchical profiles in the Spanish market, she possesses a deep understanding of the business ecosystem and masters the keys to executive leadership and strategic management specific to the cultural and professional environment. She combines strategic vision with practical execution to ensure that each selection process not only fills a position but also enhances the growth and competitiveness of the organization.",
     belen: "Co-Founder",
     belenDescripcion: "With a focus on effective communication and innovative selection strategies, Belén optimizes the talent attraction process from conceptualization to onboarding. Her experience in designing clear and engaging messages, managing employer branding, and implementing advanced selection methodologies ensures a positive experience for both the client and the candidate.",
