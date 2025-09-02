@@ -15,30 +15,60 @@ export function Footer() {
           <div className="text-center md:text-left">
             <h3 className="text-lg font-semibold mb-4">{t("socialNetworks")}</h3>
             <div className="flex justify-center md:justify-start gap-4">
-              <a href="#" className="hover:text-brand-secondary transition-colors">
+              <a
+                href="https://www.linkedin.com/company/who-consultora-integral/posts/?feedView=all"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-brand-secondary transition-colors"
+              >
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="#" className="hover:text-brand-secondary transition-colors">
+              <a
+                href="https://www.instagram.com/whoconsultoraintegral/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-brand-secondary transition-colors"
+              >
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="#" className="hover:text-brand-secondary transition-colors">
+              <a
+                href="https://www.facebook.com/profile.php?id=100063522880814"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-brand-secondary transition-colors"
+              >
                 <Facebook className="w-6 h-6" />
               </a>
             </div>
           </div>
 
-          <Image src="/logo-who.png" alt="Who? Consultora Logo" width={800} height={800} className="w-[10rem] mx-auto animate-fade-in delay-500" />
+          {/* Logo */}
+          <Image
+            src="/logo-who.png"
+            alt="Who? Consultora Logo"
+            width={800}
+            height={800}
+            className="w-[10rem] mx-auto animate-fade-in delay-500"
+          />
 
           {/* Contact Info */}
           <div className="text-center md:text-right">
             <h3 className="text-lg font-semibold mb-4">{t("contactInfo")}</h3>
             <div className="space-y-2 text-sm text-gray-300">
-              <p>info@whoconsultoraintegral.com.ar</p>
-              <p>+54 11 1234 5678</p>
+              <a
+                href="mailto:info@whoconsultoraintegral.com.ar"
+                className="hover:text-brand-secondary transition-colors block"
+              >
+                info@whoconsultoraintegral.com.ar
+              </a>
+             <a href="https://wa.me/5493517502319" target="_blank">
+                +54 9 351 750-2319
+              </a>
             </div>
           </div>
         </div>
 
+        {/* Copyright */}
         <div className="border-t border-white/20 mt-8 pt-8 text-center text-sm text-gray-400">
           <p>&copy; 2024 Who? Consultora Integral. Todos los derechos reservados.</p>
         </div>
