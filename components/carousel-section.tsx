@@ -4,27 +4,43 @@ import React, { useState } from "react";
 import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button"
+import { useI18n } from "@/hooks/use-i18n";
 
-const servicios = [
-  {
-    titulo: 'Reclutamiento y selección',
-    descripcion: 'Realizamos todo el proceso de búsqueda y selección de talentos. Esto incluye la identificación de los perfiles más adecuados para cada puesto, la evaluación de sus habilidades y competencias hasta la presentación del perfil adecuado a la empresa.'
-  },
-  {
-    titulo: 'Consultoria de Recursos Humanos',
-    descripcion: 'Ofrecemos sesiones de coaching personalizado tanto para candidatos de manera individual como para equipos de trabajo. El objetivo? Potenciar el desarrollo, el rendimiento y la productividad para lograr el éxito organizacional.'
-  },
-  {
-    titulo: 'Consultoría de IT',
-    descripcion: 'Diseñamos soluciones a medidas para distintos sectores industriales.'
-  },
-  {
-    titulo: 'Acesoria para diseño y armado de Curriculums y LinkedIn',
-    descripcion: 'El armado de CV es una tarea crucial tanto para el candidato como para el reclutador. Un CV bien estructurado y relevante puede marcar la diferencia entre conseguir una entrevista o ser rechazado.'
+ const scrollToContact = () => {
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
   }
-]
+
+type ServicioKey =
+  | "titulo0"
+  | "descripcion0"
+  | "titulo1"
+  | "descripcion1"
+  | "titulo2"
+  | "descripcion2"
+  | "titulo3"
+  | "descripcion3";
+
+const servicios: { titulo: ServicioKey; descripcion: ServicioKey }[] = [
+  {
+    titulo: "titulo0",
+    descripcion: "descripcion0",
+  },
+  {
+    titulo: "titulo1",
+    descripcion: "descripcion1",
+  },
+  {
+    titulo: "titulo2",
+    descripcion: "descripcion2",
+  },
+  {
+    titulo: "titulo3",
+    descripcion: "descripcion3",
+  },
+];
 
 const CarouselSection = () => {
+  const { t } = useI18n()
   const ref = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const serviciosDuplicados = [...servicios, ...servicios];
@@ -82,14 +98,15 @@ const CarouselSection = () => {
         >
           {serviciosDuplicados.map((servicio, index) => (
             <div key={index} className="flex flex-col items-center text-center w-[100vw] m-0 gap-2 sm:gap-5">
-              <h3 className="text-lg sm:text-3xl lg:text-5xl font-semibold mb-2">{servicio.titulo}</h3>
-              <p className="text-gray-600 sm:text-lg lg:text-2xl w-1/2">{servicio.descripcion}</p>
+              <h3 className="text-lg sm:text-3xl lg:text-5xl font-semibold mb-2">{t(servicio.titulo)}</h3>
+              <p className="text-gray-600 sm:text-lg lg:text-2xl w-1/2">{t(servicio.descripcion)}</p>
                <div>
                   <Button
+                    onClick={scrollToContact}
                     size="lg"
                     className="bg-chart-3 hover:bg-chart-4 text-white px-8 py-3 text-lg transition-all duration-300 transform hover:scale-105 cursor-pointer"
                   >
-                    Quiero saber más
+                    {t("btnCarrusel")}
                   </Button>
                 </div>
             </div>

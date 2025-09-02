@@ -9,31 +9,34 @@ import { GlobalPresenceSection } from "@/components/global-presence-section"
 import { TeamSection } from "@/components/team-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
+import { I18nProvider } from "@/hooks/use-i18n"
 
 export default function HomePage() {
   return (
     <main className="min-h-screen">
-      <div className="absolute top-4 right-4 z-50">
-        <LanguageToggle />
-      </div>
+      <I18nProvider>
+        <div className="absolute top-4 right-4 z-50">
+          <LanguageToggle />
+        </div>
 
-      <HeroSection />
-      <ServicesSection />
-      <div id="companies">
-        <CompaniesSection />
-      </div>
-      <div id="presence">
-        <GlobalPresenceSection />
-      </div>
-      <div id="team">
-        <TeamSection />
-      </div>
-      <div id="contact">
-        <ContactSection />
-      </div>
-      <Footer />
+        <HeroSection />
+        <ServicesSection />
+        <div id="presence">
+          <GlobalPresenceSection />
+        </div>
+        <div id="companies">
+          <CompaniesSection />
+        </div>
+        <div id="team">
+          <TeamSection />
+        </div>
+        <div id="contact">
+          <ContactSection />
+        </div>
+        <Footer />
 
-      <WhatsAppButton />
+        <WhatsAppButton />
+      </I18nProvider>
     </main>
   )
 }

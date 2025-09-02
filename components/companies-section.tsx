@@ -20,10 +20,10 @@ export function CompaniesSection() {
   ]
 
   return (
-    <section className="py-20 bg-dark-custom text-white">
+    <section className="py-20 text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl text-gray-900 font-bold mb-4">
             {t("companiesTitle")} <span className="text-brand-secondary">{t("companiesHighlight")}</span>{" "}
             {t("companiesSubtitle")}
           </h2>

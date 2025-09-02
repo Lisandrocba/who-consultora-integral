@@ -10,10 +10,10 @@ export function GlobalPresenceSection() {
   const { t } = useI18n()
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-dark-custom">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             {t("presenceTitle")} <span className="text-brand-primary">{t("presenceHighlight")}</span>
           </h2>
           <div className="w-24 h-1 bg-brand-primary mx-auto"></div>

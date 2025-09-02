@@ -9,19 +9,19 @@ export function LanguageToggle() {
   return (
     <div className="flex items-center gap-2">
       <Button
-        variant={language === "es" ? "default" : "outline"}
+        variant={language === "es" ? "default" : "outlineSecondary"}
         size="sm"
         onClick={() => changeLanguage("es")}
-        className="flex items-center gap-2 px-3"
+        className="flex items-center gap-2 px-3 cursor-pointer"
       >
         <span className="text-lg">🇪🇸</span>
         <span className="text-sm font-medium">ES</span>
       </Button>
       <Button
-        variant={language === "en" ? "default" : "outline"}
+        variant={language === "en" ? "default" : "outlineSecondary"}
         size="sm"
         onClick={() => changeLanguage("en")}
-        className="flex items-center gap-2 px-3"
+        className="flex items-center gap-2 px-3 cursor-pointer"
       >
         <span className="text-lg">🇺🇸</span>
         <span className="text-sm font-medium">EN</span>
