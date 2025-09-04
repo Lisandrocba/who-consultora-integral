@@ -44,10 +44,12 @@ export function Footer() {
 
           {/* Logo */}
           <Image
+            loading="lazy"
             src="/logo-who.png"
             alt="Who? Consultora Logo"
-            width={800}
-            height={800}
+            width={160}
+            height={160}
+            sizes="160px"
             className="w-[10rem] mx-auto animate-fade-in delay-500"
           />
 

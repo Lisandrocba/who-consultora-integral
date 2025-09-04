@@ -32,28 +32,28 @@ export function CompaniesSection() {
         <div className='slider' style={{'--width': '100px', '--height': '50px', '--quantity': 8 } as React.CSSProperties}>
           <div className='list'>
             <div className='item' style={{'--position': 1}   as React.CSSProperties}>
-              <Image width={800} height={800} src='/empresas/river.jpg' alt='Empresas'/>
+              <Image loading="lazy" width={200} height={100} src='/empresas/river.jpg' alt='River Plate' sizes="200px"/>
             </div>
             <div className='item' style={{'--position': 2} as React.CSSProperties}>
-              <Image width={800} height={800} src='/empresas/cloneUp.jpg' alt='Empresas'/>
+              <Image loading="lazy" width={200} height={100} src='/empresas/cloneUp.jpg' alt='CloneUp' sizes="200px"/>
               </div>
             <div className='item' style={{'--position': 3}  as React.CSSProperties}>
-              <Image width={800} height={800} src='/empresas/hPampa.jpg' alt='Empresas'/>
+              <Image loading="lazy" width={200} height={100} src='/empresas/hPampa.jpg' alt='H Pampa' sizes="200px"/>
               </div>
             <div className='item' style={{'--position': 4}  as React.CSSProperties}>
-              <Image width={800} height={800} src='/empresas/diveria.jpg' alt='Empresas'/>
+              <Image loading="lazy" width={200} height={100} src='/empresas/diveria.jpg' alt='Diveria' sizes="200px"/>
               </div>
             <div className='item' style={{'--position': 5} as React.CSSProperties}>
-              <Image width={800} height={800} src='/empresas/tebsa.jpg' alt='Empresas' />
+              <Image loading="lazy" width={200} height={100} src='/empresas/tebsa.jpg' alt='Tebsa' sizes="200px"/>
               </div>
             <div className='item' style={{'--position': 6} as React.CSSProperties}>
-              <Image width={800} height={800} src='/empresas/theColony.jpg' alt='Empresas' />
+              <Image loading="lazy" width={200} height={100} src='/empresas/theColony.jpg' alt='The Colony' sizes="200px"/>
               </div>
             <div className='item' style={{'--position': 7} as React.CSSProperties}>
-              <Image width={800} height={800} src='/empresas/themill.jpg' alt='Empresas' />
+              <Image loading="lazy" width={200} height={100} src='/empresas/themill.jpg' alt='The Mill' sizes="200px"/>
               </div>
             <div className='item' style={{'--position': 8} as React.CSSProperties}>
-              <Image width={800} height={800} src='/empresas/trizap.jpg' alt='Empresas' />
+              <Image loading="lazy" width={200} height={100} src='/empresas/trizap.jpg' alt='Trizap' sizes="200px"/>
               </div>
           </div>
         </div>

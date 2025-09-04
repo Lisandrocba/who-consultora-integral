@@ -3,9 +3,39 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { useI18n } from "@/hooks/use-i18n"
 import Image from "next/image"
+import React from "react"
 
 export function TeamSection() {
   const { t } = useI18n()
+  const ref = React.useRef(null)
+  const [isVisible, setIsVisible] = React.useState(false)
+
+  React.useEffect(() => {
+    if (window.innerWidth < 768) {
+      setIsVisible(true) // se muestra directamente sin animación
+      return
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true)
+            observer.unobserve(entry.target)
+          }
+        })
+      },
+      { threshold: 0.2 }
+    )
+
+    if (ref.current) {
+      observer.observe(ref.current)
+    }
+
+    return () => {
+      if (ref.current) observer.unobserve(ref.current)
+    }
+  }, [])
   return (
     <section className="py-20 bg-dark-custom text-white">
       <div className="container mx-auto px-4">
@@ -16,8 +46,16 @@ export function TeamSection() {
         </div>
 
          <div className='flex flex-col lg:flex-row justify-center items-center lg:items-stretch gap-5 lg:mx-auto lg:w-full'>
-        <div className='flex flex-col justify-start items-start gap-4 w-[90vw] lg:w-[450px] bg-white rounded-lg'>
-          <Image width={1000} height={1000} src='/nadia.jpg' alt='Belen' className='w-full rounded-t-lg' />
+        <div ref={ref} className={'flex flex-col justify-start items-start gap-4 w-[90vw] lg:w-[450px] bg-white rounded-lg ' + (isVisible ? ' animate-izq-der' : 'opacity-0')}>
+          <Image 
+            loading="lazy"
+            width={450} 
+            height={300} 
+            src='/nadia.jpg' 
+            alt='Nadia Jurevicius Rodríguez' 
+            sizes="(max-width: 1024px) 90vw, 450px"
+            className='w-full rounded-t-lg' 
+          />
           <div className="flex flex-col justify-between items-start">
             <div className='flex flex-col justify-start items-start gap-2'>
               <p className='font-semibold px-4 text-xl text-gray-800'>Nadia Jurevicius Rodríguez</p>
@@ -75,7 +113,15 @@ export function TeamSection() {
           </div>
         </div>
         <div className='flex flex-col justify-start items-start gap-4 w-[90vw] lg:w-[450px] bg-white rounded-lg'>
-          <Image width={1000} height={1000} src='/blanquita.jpg' alt='Belen' className='w-full rounded-t-lg' />
+          <Image 
+            loading="lazy"
+            width={450} 
+            height={300} 
+            src='/blanquita.jpg' 
+            alt='María Belén Córdoba' 
+            sizes="(max-width: 1024px) 90vw, 450px"
+            className='w-full rounded-t-lg' 
+          />
           <div className="flex flex-col justify-between items-start min-h-fit h-full">
             <div className='flex flex-col justify-start items-start gap-2'>
               <p className='font-semibold px-4 text-xl text-gray-800'>María Belén Córdoba</p>
@@ -132,8 +178,16 @@ export function TeamSection() {
             </div>
           </div>
         </div>
-        <div className='flex flex-col justify-start items-start gap-4 w-[90vw] lg:w-[450px] bg-white rounded-lg'>
-          <Image width={1000} height={1000} src='/juan.jpg' alt='Belen' className='w-full rounded-t-lg' />
+        <div ref={ref} className={'flex flex-col justify-start items-start gap-4 w-[90vw] lg:w-[450px] bg-white rounded-lg ' + (isVisible ? ' animate-der-izq' : 'opacity-0')}>
+          <Image 
+            loading="lazy"
+            width={450} 
+            height={300} 
+            src='/juan.jpg' 
+            alt='Juan Manuel Román' 
+            sizes="(max-width: 1024px) 90vw, 450px"
+            className='w-full rounded-t-lg' 
+          />
           <div className="flex flex-col justify-between items-start min-h-fit h-full">
           <div className='flex flex-col justify-start items-start gap-2'>
             <p className='font-semibold px-4 text-xl text-gray-800'>Juan Manuel Román</p>

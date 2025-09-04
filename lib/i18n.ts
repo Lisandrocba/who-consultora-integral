@@ -15,9 +15,10 @@ export const translations = {
     
     //carrusel section
     titulo0: 'Reclutamiento y selección',
-    descripcion0: 'Realizamos todo el proceso de búsqueda y selección de talentos. Esto incluye la identificación de los perfiles más adecuados para cada puesto, la evaluación de sus habilidades y competencias hasta la presentación del perfil adecuado a la empresa.',
+    descripcion0: 'Realizamos el proceso end to end. Esto incluye la identificación de los perfiles más adecuados para cada puesto, la evaluación de sus habilidades y competencias hasta la presentación del perfil a la empresa.',
     titulo1: 'Coaching Organizacional',
-    descripcion1: 'Ofrecemos sesiones de coaching personalizado tanto para candidatos de manera individual como para equipos de trabajo. El objetivo? Potenciar el desarrollo, el rendimiento y la productividad para lograr el éxito organizacional.',
+    descripcion1: 'Ofrecemos sesiones de coaching personalizado tanto para candidatos de manera individual como para equipos de trabajo.',
+    descripcion11:'El objetivo? Potenciar el desarrollo, el rendimiento y la productividad para lograr el éxito organizacional.',
     titulo2: 'Consultoría de IT',
     descripcion2: 'Diseñamos soluciones a medidas para distintos sectores industriales.',
     btnCarrusel: 'Quiero saber más',
@@ -25,9 +26,6 @@ export const translations = {
     // Services Section
     servicesTitle: "Nuestros",
     servicesHighlight: "Servicios",
-    recruitmentTitle: "Reclutamiento y selección",
-    recruitmentDescription:
-      "Realizamos todo el proceso de búsqueda y selección de talentos. Esto incluye la identificación de los perfiles más adecuados para cada puesto, la evaluación de sus habilidades y competencias hasta la presentación del perfil adecuado a tu empresa.",
 
     // Companies Section
     companiesTitle: "Empresas que",
@@ -85,7 +83,8 @@ export const translations = {
     titulo0: 'Recruitment and selection',
     descripcion0: 'We carry out the entire talent search and selection process. This includes identifying the most suitable profiles for each position, evaluating their skills and competencies up to presenting the right profile to your company.',
     titulo1: 'Organizational Coaching',
-    descripcion1: 'We offer personalized coaching sessions for candidates individually and for work teams. The goal? Enhance development, performance, and productivity to achieve organizational success.',
+    descripcion1: 'We offer personalized coaching sessions both for individual candidates and for work teams.',
+    descripcion11:'The goal? To enhance development, performance, and productivity to achieve organizational success.',
     titulo2: 'IT Consulting',
     descripcion2: 'We design tailor-made solutions for different industrial sectors.',
     btnCarrusel: 'I want to know more',
@@ -93,9 +92,6 @@ export const translations = {
     // Services Section
     servicesTitle: "Our",
     servicesHighlight: "Services",
-    recruitmentTitle: "Recruitment and selection",
-    recruitmentDescription:
-      "We carry out the entire talent search and selection process. This includes identifying the most suitable profiles for each position, evaluating their skills and competencies up to presenting the right profile to your company.",
 
     // Companies Section
     companiesTitle: "Companies that",

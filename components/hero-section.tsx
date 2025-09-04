@@ -22,9 +22,9 @@ export function HeroSection() {
         
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 text-center text-white md:flex md:flex-row md:items-center md:justify-between">
-        <div className="max-w-4xl mx-auto md:flex md:flex-col md:items-start justify-center md:text-left">
-          <h1 className="text-5xl md:text-5xl font-bold mb-4 text-nowrap animate-fade-in">
+      <div className="relative flex flex-col-reverse gap-20 z-10 container mx-auto px-4 text-center text-white xl:flex xl:flex-row xl:items-center xl:gap-0 xl:justify-between">
+        <div className="max-w-4xl mx-auto xl:flex xl:flex-col xl:items-start justify-center xl:text-left animate-arriba-abajo">
+          <h1 className="text-4xl text-center md:text-5xl font-bold mb-4 xl:text-nowrap animate-fade-in">
             {t("heroTitle")} <span className="text-brand-secondary">{t("heroSubtitle")}</span>
           </h1>
 
@@ -33,14 +33,22 @@ export function HeroSection() {
           <Button
             onClick={scrollToServices}
             size="lg"
-            className="bg-chart-3 hover:bg-chart-4 cursor-pointer text-white px-8 py-3 text-lg transition-all duration-300 transform hover:scale-105"
+            className="bg-chart-3 mb-5 md:mb-0 hover:bg-chart-4 cursor-pointer text-white px-8 py-3 text-lg transition-all duration-300 transform hover:scale-105"
           >
             {t("seeServices")}
           </Button>
         </div>
 
         {/* Logo section */}
-        <Image src="/logo-who.png" alt="Who? Consultora Logo" width={800} height={800} className="w-[25rem] mx-auto animate-fade-in delay-500" />
+        <Image 
+          priority
+          src="/logo.svg" 
+          alt="Who? Consultora Logo" 
+          width={480} 
+          height={480} 
+          sizes="(max-width: 768px) 256px, 480px"
+          className="w-64 m-auto md:w-[30rem] md:-translate-y-5 animate-der-izq" 
+        />
       </div>
     </section>
   )

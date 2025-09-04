@@ -15,10 +15,11 @@ type ServicioKey =
   | "descripcion0"
   | "titulo1"
   | "descripcion1"
+  | "descripcion11"
   | "titulo2"
   | "descripcion2"
 
-const servicios: { titulo: ServicioKey; descripcion: ServicioKey }[] = [
+const servicios: { titulo: ServicioKey; descripcion: ServicioKey; subdescripcion?: ServicioKey }[] = [
   {
     titulo: "titulo0",
     descripcion: "descripcion0",
@@ -26,6 +27,7 @@ const servicios: { titulo: ServicioKey; descripcion: ServicioKey }[] = [
   {
     titulo: "titulo1",
     descripcion: "descripcion1",
+    subdescripcion: "descripcion11"
   },
   {
     titulo: "titulo2",
@@ -61,11 +63,11 @@ const CarouselSection = () => {
   return (
     <main ref={ref} className="py-10">
 
-      <div className="relative z-0 w-full m-0 p-0 h-80 overflow-hidden">
+      <div className="relative h-[50vh] z-0 w-full m-0 p-0 xl:h-80 overflow-hidden">
       {/* Botón Izquierda */}
       <button
         onClick={irIzquierda}
-        className="absolute left-60 top-1/2 transform -translate-y-1/2 z-20 
+        className="absolute left-5 xl:left-60 top-1/2 transform -translate-y-1/2 z-20 
                    bg-white/80 hover:bg-white shadow-lg rounded-full p-3 
                    transition-all duration-200 hover:scale-110 cursor-pointer"
         aria-label="Servicio anterior"
@@ -76,7 +78,7 @@ const CarouselSection = () => {
       {/* Botón Derecha */}
       <button
         onClick={irDerecha}
-        className="absolute right-60 top-1/2 transform -translate-y-1/2 z-20 
+        className="absolute right-5 xl:right-60 top-1/2 transform -translate-y-1/2 z-20 
                    bg-white/80 hover:bg-white shadow-lg rounded-full p-3 
                    transition-all duration-200 hover:scale-110 cursor-pointer"
         aria-label="Siguiente servicio"
@@ -94,6 +96,10 @@ const CarouselSection = () => {
             <div key={index} className="flex flex-col items-center text-center w-[100vw] m-0 gap-2 sm:gap-5">
               <h3 className="text-lg sm:text-3xl lg:text-5xl font-semibold mb-2">{t(servicio.titulo)}</h3>
               <p className="text-gray-600 sm:text-lg lg:text-2xl w-1/2">{t(servicio.descripcion)}</p>
+              {
+                servicio.subdescripcion &&
+                <p className="text-gray-600 sm:text-lg lg:text-2xl w-1/2">{t(servicio.subdescripcion)}</p>
+              }
                <div>
                   <Button
                     onClick={scrollToContact}
@@ -108,7 +114,7 @@ const CarouselSection = () => {
         </div>
 
       {/* Indicadores opcionales */}
-      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-20 flex gap-2">
+      <div className="absolute bottom-0 xl:bottom-0 left-1/2 transform -translate-x-1/2 z-20 flex gap-2">
         {servicios.map((_, index) => (
           <button
             key={index}

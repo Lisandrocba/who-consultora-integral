@@ -43,7 +43,15 @@ export function GlobalPresenceSection() {
             </Card>
           </div>
           <div className="border-brand-primary/20 rounded-md pl-4 py-4 bg-[#f5f4f8]">
-            <Image src="/maps.png" alt="Global Presence" width={600} height={400} className="mx-auto " />
+            <Image 
+              loading="lazy"
+              src="/maps.png" 
+              alt="Global Presence" 
+              width={600} 
+              height={400} 
+              sizes="(max-width: 768px) 100vw, 600px"
+              className="mx-auto" 
+            />
           </div>
         </div>
       </div>
