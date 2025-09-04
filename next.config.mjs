@@ -13,7 +13,6 @@ const nextConfig = {
     minimumCacheTTL: 60 * 60 * 24 * 365, // 1 año
     dangerouslyAllowSVG: true,
     contentDispositionType: 'attachment',
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
   // Habilitar compresión
   compress: true,

@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://whoconsultoraintegral.com.ar/sitemap.xml
+
+# Permitir a todos los bots indexar todo el sitio
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+# Crawl-delay para evitar sobrecarga
+Crawl-delay: 1
