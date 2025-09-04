@@ -69,6 +69,7 @@ export function TeamSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
+                aria-label="Telefono-nadia"
               >
                 <svg className="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                   <path
@@ -81,7 +82,7 @@ export function TeamSection() {
             </div>
 
             <div className="flex flex-row justify-center items-center gap-4 cursor-pointer">
-              <a href="mailto:njurevicius@whoconsultoraintegral.com" className="flex items-center gap-2">
+              <a aria-label="Mail-nadia" href="mailto:njurevicius@whoconsultoraintegral.com" className="flex items-center gap-2">
                 <svg className="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                   <path
                     fill="#5680BC"
@@ -98,6 +99,7 @@ export function TeamSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
+                aria-label="Linkedin-nadia"
               >
                 <svg className="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                   <path
@@ -135,6 +137,7 @@ export function TeamSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
+                  aria-label="Telefono-belen"
                 >
                   <svg className="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                     <path
@@ -147,7 +150,7 @@ export function TeamSection() {
               </div>
 
               <div className="flex flex-row justify-center items-center gap-4 cursor-pointer">
-                <a href="mailto:mbcordoba@whoconsultoraintegral.com" className="flex items-center gap-2">
+                <a aria-label="Mail-belen" href="mailto:mbcordoba@whoconsultoraintegral.com" className="flex items-center gap-2">
                   <svg className="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path
                       fill="#5680BC"
@@ -164,6 +167,7 @@ export function TeamSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
+                  aria-label="Linkedin-belen"
                 >
                   <svg className="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path
@@ -201,6 +205,7 @@ export function TeamSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
+                aria-label="Telefono-juan"
               >
                 <svg className="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                   <path
@@ -213,7 +218,7 @@ export function TeamSection() {
             </div>
 
             <div className="flex flex-row justify-center items-center gap-4 cursor-pointer">
-              <a href="mailto:jmroman@whoconsultoraintegral.com" className="flex items-center gap-2">
+              <a aria-label="Mail-juan" href="mailto:jmroman@whoconsultoraintegral.com" className="flex items-center gap-2">
                 <svg className="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                   <path
                     fill="#5680BC"
@@ -230,6 +235,7 @@ export function TeamSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
+                aria-label="Linkedin-juan"
               >
                 <svg className="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                   <path
